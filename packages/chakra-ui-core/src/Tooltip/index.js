@@ -91,7 +91,7 @@ const Tooltip = {
     // Attached immediately.
     this.$nextTick(() => {
       this.noop++
-      this.tooltipAnchor = document.querySelector(`[x-tooltip-anchor=${this.tooltipId}]`)
+      this.tooltipAnchor = document.querySelector(`[data-popper-tooltip-anchor=${this.tooltipId}]`)
     })
   },
   render (h) {
